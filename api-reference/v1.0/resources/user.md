@@ -191,7 +191,7 @@ This resource supports:
 |surname|String|The user's surname (family name or last name). Supports `$filter`.|
 |usageLocation|String|A two letter country code (ISO standard 3166). Required for users that will be assigned licenses due to legal requirement to check for availability of services in countries.  Examples include: "US", "JP", and "GB". Not nullable. Supports `$filter`.|
 |userPrincipalName|String|The user principal name (UPN) of the user. The UPN is an Internet-style login name for the user based on the Internet standard RFC 822. By convention, this should map to the user's email name. The general format is alias@domain, where domain must be present in the tenant's collection of verified domains. This property is required when a user is created. The verified domains for the tenant can be accessed from the **verifiedDomains** property of [organization](organization.md). Supports `$filter` and `$orderby`.
-|userType|String|A string value that can be used to classify user types in your directory, such as "Member" and "Guest". Supports `$filter`.          |
+|userType|String|A string value used to classify user types in your directory. The only allowed values are "Member" or "Guest". Supports `$filter`.          |
 
 ### Legal age group property definitions
 
